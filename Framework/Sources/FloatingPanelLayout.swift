@@ -54,7 +54,7 @@ public enum FloatingPanelLayoutReference: Int {
     case fromSuperview = 1
 }
 
-public protocol FloatingPanelLayout: class {
+public protocol FloatingPanelLayout: AnyObject {
     /// Returns the initial position of a floating panel.
     var initialPosition: FloatingPanelPosition { get }
 
